@@ -2,3 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --cover-image: url('../images/cover-image-dark.png');
+  --background-color: #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --font-color: #F1B2CE;
+  --decor-font-color: var(--background-color);
+  --decor-color: var(--accent-color);
+  --format-offset: 10px;
+  --cards-vertical-offset: 50px;
+  --dark-theme-decorator-display: inline-block;
+}
+
+@media (width >= 768px) {
+:root {
+  --format-offset: 20px;
+  --cards-vertical-offset: 80px;
+}
+}
