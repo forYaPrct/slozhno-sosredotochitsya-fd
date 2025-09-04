@@ -282,10 +282,6 @@
 }
 
 .section:nth-of-type(2) .article {
-  grid-column: 1/4;
-}
-
-.section:nth-of-type(2) .article {
   grid-column: span 1;
   grid-row: 2;
 }
