@@ -181,7 +181,8 @@
   gap: 20px;
 }
 
-.article {
+.article,
+.articles-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -204,6 +205,7 @@
 
 .footer-title {
   justify-self: center;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 /* Медиазапросы */
@@ -234,11 +236,12 @@
   grid-row: 1;
 }
 
-.article {
+.article,
+.articles-group {
   grid-column: 2/3;
 }
 
-.section:nth-of-type(2) .article {
+.section-accent .article {
   grid-column: 1/3;
 }
 
@@ -277,12 +280,17 @@
   gap: 20px;
 }
 
-.article {
+.article,
+.articles-group {
   grid-column: 2/4;
 }
 
-.section:nth-of-type(2) .article {
+.section-accent::before {
+  content: "";
+  grid-column: 2/-1 ;
+}
+
+.section-accent .article {
   grid-column: span 1;
-  grid-row: 2;
 }
 }
